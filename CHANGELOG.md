@@ -2,6 +2,10 @@
 
 All notable changes to Soplos Plymouth Manager are documented in this file.
 
+## [3.0.0-beta] - 2026-10-25
+
+First beta, after the alpha was tested on real hardware.
+
 ## [3.0.0-alpha] - 2026-10-24
 
 Full rewrite of Soplos Plymouth Manager, from Python 3 and GTK3 to Tauri 2 with a Rust backend and a Svelte frontend. See the Architecture section of the README. Not yet tested on real hardware.

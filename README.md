@@ -1,6 +1,6 @@
 # Soplos Plymouth Manager 3.0
 
-![Version](https://img.shields.io/badge/version-3.0.0--alpha-blue)
+![Version](https://img.shields.io/badge/version-3.0.0--beta-blue)
 ![License](https://img.shields.io/badge/license-GPL--3.0--or--later-green)
 ![Platform](https://img.shields.io/badge/platform-Linux-lightgrey)
 ![Tauri](https://img.shields.io/badge/Tauri-2-orange)
@@ -17,7 +17,7 @@ Choose which theme the boot screen shows, preview it, install new ones from an a
 
 ## Status
 
-This is the first alpha of the rewrite. Every action does its work: applying sets the default theme and rebuilds the initramfs, previewing shows the theme for real and takes a picture of it, installing unpacks an archive into the themes folder and removing deletes the themes. It has not yet been tested on real hardware: report anything that fails.
+This is the first beta of the rewrite, after the alpha was tested on real hardware. Every action does its work: applying sets the default theme and rebuilds the initramfs, previewing shows the theme for real and takes a picture of it, installing unpacks an archive into the themes folder and removing deletes the themes. Report anything that fails.
 
 ## Architecture
 

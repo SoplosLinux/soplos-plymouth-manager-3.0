@@ -172,6 +172,11 @@
   </screenshots>
 
   <releases>
+    <release version="3.0.0-beta" date="2026-10-25">
+      <description>
+        <p>First beta of the rewrite of Soplos Plymouth Manager, after the alpha was tested on real hardware.</p>
+      </description>
+    </release>
     <release version="3.0.0-alpha" date="2026-10-24">
       <description>
         <p>First alpha of the rewrite of Soplos Plymouth Manager, from Python 3 and GTK3 to Tauri 2 with a Rust backend and a Svelte frontend. It applies, previews, installs and removes themes for real, with dracut or initramfs-tools, on X11 and Wayland. It has not yet been tested on real hardware.</p>
