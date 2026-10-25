@@ -1,0 +1,85 @@
+{
+  "app": {
+    "title": "Manager Plymouth Soplos"
+  },
+  "hero": {
+    "title": "Temele ecranului de pornire",
+    "description": "Alege, previzualizează, instalează și elimină temele Plymouth ale Soplos Linux."
+  },
+  "common": {
+    "cancel": "Anulează",
+    "close": "Închide",
+    "ok": "OK",
+    "remove": "Elimină"
+  },
+  "sidebar": {
+    "language": "Limbă",
+    "switchToLight": "Treci la tema luminoasă",
+    "switchToDark": "Treci la tema întunecată",
+    "aboutTooltip": "Despre Managerul Plymouth Soplos"
+  },
+  "about": {
+    "version": "Versiunea {version}",
+    "tagline": "Manager de teme pentru ecranul de pornire Plymouth al Soplos Linux.",
+    "copyright": "Copyright © 2026 Sergi Perich",
+    "license": "Licență GPL-3.0-or-later",
+    "website": "soplos.org"
+  },
+  "environment": {
+    "gnome": "GNOME",
+    "kde": "KDE Plasma",
+    "xfce": "XFCE",
+    "unknown": "Necunoscut",
+    "x11": "X11",
+    "wayland": "Wayland"
+  },
+  "themes": {
+    "emptyTitle": "Nicio temă găsită",
+    "emptyBody": "Nu s-au găsit teme Plymouth în folderele obișnuite. Instalează pachetul plymouth sau o temă ca să le vezi aici.",
+    "selected": "{count} selectate",
+    "selectAll": "Selectează tot",
+    "clearSelection": "Anulează selecția",
+    "cardSelect": "Selectează {name}",
+    "apply": "Aplică tema",
+    "preview": "Previzualizare",
+    "install": "Instalează",
+    "remove": "Elimină",
+    "removeSelected": "Elimină selectate ({count})",
+    "refresh": "Reîmprospătează",
+    "inUse": "În uz",
+    "textOnly": "Doar text",
+    "textOnlyTitle": "Temă doar text",
+    "textOnlyBody": "Această temă scrie doar text și nu poate fi previzualizată într-o fereastră.",
+    "selectBundle": "Selectează un fișier de temă",
+    "bundlesFilter": "Arhive de teme",
+    "removeTitle": "Elimină tema",
+    "removeBody": "Ștergi tema {name}? Nu se poate anula.",
+    "removeManyBody": "Ștergi cele {count} teme selectate? Nu se poate anula.",
+    "removeSkipped": "Tema în uz rămâne deoparte: nu poate fi eliminată.",
+    "removeActive": "Tema în uz nu poate fi eliminată. Aplică mai întâi alta."
+  },
+  "steps": {
+    "setTheme": "Tema {arg} a fost setată ca implicită.",
+    "initramfs": "Initramfs reconstruit cu {arg}.",
+    "noInitramfs": "Niciun instrument pentru initramfs găsit (dracut, update-initramfs sau mkinitcpio). Tema este aleasă, dar nu va apărea la pornire până nu reconstruiești initramfs.",
+    "installed": "Tema {arg} a fost instalată.",
+    "removing": "Tema {arg} a fost ștearsă.",
+    "opening": "Se deschide fereastra de previzualizare.",
+    "showing": "Se afișează tema {arg}.",
+    "noDisplay": "Nu există sesiune grafică: previzualizarea necesită X11 sau Wayland.",
+    "missing": "Lipsește programul {arg}. Instalează-l ca să poți face asta.",
+    "notPreviewable": "Această temă nu poate fi previzualizată.",
+    "xephyrFailed": "Ecranul de test (Xephyr) nu a putut fi deschis.",
+    "captureFailed": "Captura previzualizării nu a putut fi făcută."
+  },
+  "errors": {
+    "title": "Nu s-a putut finaliza",
+    "apply": "Tema nu a putut fi aplicată.",
+    "preview": "Tema nu a putut fi previzualizată.",
+    "install": "Tema nu a putut fi instalată.",
+    "remove": "Nu toate temele au putut fi eliminate."
+  },
+  "notices": {
+    "title": "Notificare"
+  }
+}

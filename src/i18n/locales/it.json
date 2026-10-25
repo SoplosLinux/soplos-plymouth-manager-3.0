@@ -1,0 +1,85 @@
+{
+  "app": {
+    "title": "Gestore Plymouth Soplos"
+  },
+  "hero": {
+    "title": "Temi della schermata di avvio",
+    "description": "Scegli, visualizza in anteprima, installa e rimuovi i temi Plymouth di Soplos Linux."
+  },
+  "common": {
+    "cancel": "Annulla",
+    "close": "Chiudi",
+    "ok": "OK",
+    "remove": "Rimuovi"
+  },
+  "sidebar": {
+    "language": "Lingua",
+    "switchToLight": "Passa al tema chiaro",
+    "switchToDark": "Passa al tema scuro",
+    "aboutTooltip": "Informazioni sul Gestore Plymouth Soplos"
+  },
+  "about": {
+    "version": "Versione {version}",
+    "tagline": "Gestore dei temi della schermata di avvio Plymouth per Soplos Linux.",
+    "copyright": "Copyright © 2026 Sergi Perich",
+    "license": "Licenza GPL-3.0-or-later",
+    "website": "soplos.org"
+  },
+  "environment": {
+    "gnome": "GNOME",
+    "kde": "KDE Plasma",
+    "xfce": "XFCE",
+    "unknown": "Sconosciuto",
+    "x11": "X11",
+    "wayland": "Wayland"
+  },
+  "themes": {
+    "emptyTitle": "Nessun tema trovato",
+    "emptyBody": "Non sono stati trovati temi Plymouth nelle cartelle abituali. Installa il pacchetto plymouth o un tema per vederli qui.",
+    "selected": "{count} selezionati",
+    "selectAll": "Seleziona tutti",
+    "clearSelection": "Annulla la selezione",
+    "cardSelect": "Seleziona {name}",
+    "apply": "Applica tema",
+    "preview": "Anteprima",
+    "install": "Installa",
+    "remove": "Rimuovi",
+    "removeSelected": "Rimuovi selezionati ({count})",
+    "refresh": "Aggiorna",
+    "inUse": "In uso",
+    "textOnly": "Solo testo",
+    "textOnlyTitle": "Tema solo testo",
+    "textOnlyBody": "Questo tema scrive solo testo e non può essere visualizzato in anteprima in una finestra.",
+    "selectBundle": "Seleziona un file di tema",
+    "bundlesFilter": "Archivi di temi",
+    "removeTitle": "Rimuovi tema",
+    "removeBody": "Eliminare il tema {name}? Non si può annullare.",
+    "removeManyBody": "Eliminare i {count} temi selezionati? Non si può annullare.",
+    "removeSkipped": "Il tema in uso resta fuori: non può essere rimosso.",
+    "removeActive": "Il tema in uso non può essere rimosso. Applicane prima un altro."
+  },
+  "steps": {
+    "setTheme": "Tema {arg} impostato come predefinito.",
+    "initramfs": "Initramfs ricostruito con {arg}.",
+    "noInitramfs": "Nessuno strumento initramfs trovato (dracut, update-initramfs o mkinitcpio). Il tema è scelto, ma comparirà all'avvio solo dopo aver ricostruito l'initramfs.",
+    "installed": "Tema {arg} installato.",
+    "removing": "Tema {arg} eliminato.",
+    "opening": "Apertura della finestra di anteprima.",
+    "showing": "Visualizzazione del tema {arg}.",
+    "noDisplay": "Non c'è una sessione grafica: l'anteprima richiede X11 o Wayland.",
+    "missing": "Manca il programma {arg}. Installalo per poterlo fare.",
+    "notPreviewable": "Questo tema non può essere visualizzato in anteprima.",
+    "xephyrFailed": "Non è stato possibile aprire lo schermo di prova (Xephyr).",
+    "captureFailed": "Non è stato possibile acquisire l'immagine dell'anteprima."
+  },
+  "errors": {
+    "title": "Operazione non completata",
+    "apply": "Non è stato possibile applicare il tema.",
+    "preview": "Non è stato possibile visualizzare il tema in anteprima.",
+    "install": "Non è stato possibile installare il tema.",
+    "remove": "Non è stato possibile rimuovere tutti i temi."
+  },
+  "notices": {
+    "title": "Avviso"
+  }
+}

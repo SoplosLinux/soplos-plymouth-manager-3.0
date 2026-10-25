@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.soplos.plymouthmanager</id>
+  <pkgname>soplos-plymouth-manager</pkgname>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <project_group>org.soplos</project_group>
+
+  <name>Soplos Plymouth Manager</name>
+  <name xml:lang="es">Gestor Plymouth Soplos</name>
+  <name xml:lang="fr">Gestionnaire Plymouth Soplos</name>
+  <name xml:lang="de">Soplos Plymouth-Manager</name>
+  <name xml:lang="pt">Gestor Plymouth Soplos</name>
+  <name xml:lang="it">Gestore Plymouth Soplos</name>
+  <name xml:lang="ro">Manager Plymouth Soplos</name>
+  <name xml:lang="ru">Менеджер Plymouth Soplos</name>
+
+  <summary>Plymouth boot splash theme manager for Soplos Linux</summary>
+  <summary xml:lang="es">Gestor de temas de arranque Plymouth para Soplos Linux</summary>
+  <summary xml:lang="fr">Gestionnaire de thèmes de démarrage Plymouth pour Soplos Linux</summary>
+  <summary xml:lang="de">Plymouth-Manager für die Startbildschirm-Themes von Soplos Linux</summary>
+  <summary xml:lang="pt">Gestor de temas de arranque Plymouth para o Soplos Linux</summary>
+  <summary xml:lang="it">Gestore dei temi di avvio Plymouth per Soplos Linux</summary>
+  <summary xml:lang="ro">Manager de teme de pornire Plymouth pentru Soplos Linux</summary>
+  <summary xml:lang="ru">Менеджер тем загрузочного экрана Plymouth для Soplos Linux</summary>
+
+  <description>
+    <p>
+      Soplos Plymouth Manager chooses, previews, installs and removes the
+      Plymouth boot splash themes of Soplos Linux. It works on Xfce, Plasma and
+      GNOME, with X11 or Wayland, and rebuilds the initramfs with dracut or with
+      initramfs-tools, whichever the system uses. Every change to the system
+      goes through a Polkit-authenticated helper and the window never runs as
+      root.
+    </p>
+    <p xml:lang="es">
+      El Gestor Plymouth Soplos elige, previsualiza, instala y quita los temas
+      de arranque Plymouth de Soplos Linux. Funciona en Xfce, Plasma y GNOME,
+      con X11 o Wayland, y reconstruye el initramfs con dracut o con
+      initramfs-tools, el que use el sistema. Cada cambio en el sistema pasa por
+      un ayudante autenticado con Polkit y la ventana nunca se ejecuta como root.
+    </p>
+    <p xml:lang="fr">
+      Le Gestionnaire Plymouth Soplos choisit, prévisualise, installe et
+      supprime les thèmes de démarrage Plymouth de Soplos Linux. Il fonctionne
+      sur Xfce, Plasma et GNOME, avec X11 ou Wayland, et reconstruit l'initramfs
+      avec dracut ou initramfs-tools, selon le système. Chaque modification du
+      système passe par un assistant authentifié par Polkit et la fenêtre ne
+      s'exécute jamais en root.
+    </p>
+    <p xml:lang="de">
+      Der Soplos Plymouth-Manager wählt die Plymouth-Themes des Startbildschirms
+      von Soplos Linux aus, zeigt sie in der Vorschau, installiert und entfernt
+      sie. Er läuft unter Xfce, Plasma und GNOME, mit X11 oder Wayland, und
+      erzeugt das Initramfs mit dracut oder initramfs-tools neu, je nachdem, was
+      das System verwendet. Jede Änderung am System läuft über einen per Polkit
+      authentifizierten Helfer, und das Fenster läuft nie als root.
+    </p>
+    <p xml:lang="pt">
+      O Gestor Plymouth Soplos escolhe, pré-visualiza, instala e remove os temas
+      de arranque Plymouth do Soplos Linux. Funciona no Xfce, Plasma e GNOME,
+      com X11 ou Wayland, e reconstrói o initramfs com o dracut ou com o
+      initramfs-tools, consoante o que o sistema usa. Cada alteração ao sistema
+      passa por um auxiliar autenticado com o Polkit e a janela nunca corre como
+      root.
+    </p>
+    <p xml:lang="it">
+      Il Gestore Plymouth Soplos sceglie, visualizza in anteprima, installa e
+      rimuove i temi di avvio Plymouth di Soplos Linux. Funziona su Xfce, Plasma
+      e GNOME, con X11 o Wayland, e ricostruisce l'initramfs con dracut o con
+      initramfs-tools, a seconda di ciò che usa il sistema. Ogni modifica al
+      sistema passa da un helper autenticato con Polkit e la finestra non gira
+      mai come root.
+    </p>
+    <p xml:lang="ro">
+      Managerul Plymouth Soplos alege, previzualizează, instalează și elimină
+      temele de pornire Plymouth ale Soplos Linux. Funcționează pe Xfce, Plasma
+      și GNOME, cu X11 sau Wayland, și reconstruiește initramfs cu dracut sau cu
+      initramfs-tools, după cum folosește sistemul. Fiecare modificare a
+      sistemului trece printr-un ajutor autentificat cu Polkit, iar fereastra nu
+      rulează niciodată ca root.
+    </p>
+    <p xml:lang="ru">
+      Менеджер Plymouth Soplos выбирает, показывает в предпросмотре,
+      устанавливает и удаляет темы загрузочного экрана Plymouth в Soplos Linux.
+      Он работает в Xfce, Plasma и GNOME с X11 или Wayland и пересобирает
+      initramfs с помощью dracut или initramfs-tools, в зависимости от системы.
+      Каждое изменение системы проходит через помощник с аутентификацией
+      Polkit, а окно никогда не работает от root.
+    </p>
+  </description>
+
+  <categories>
+    <category>System</category>
+    <category>Settings</category>
+  </categories>
+
+  <keywords>
+    <keyword>plymouth</keyword>
+    <keyword>boot</keyword>
+    <keyword>splash</keyword>
+    <keyword>theme</keyword>
+    <keyword>themes</keyword>
+    <keyword>soplos</keyword>
+    <keyword xml:lang="es">arranque</keyword>
+    <keyword xml:lang="es">tema</keyword>
+    <keyword xml:lang="es">temas</keyword>
+    <keyword xml:lang="fr">démarrage</keyword>
+    <keyword xml:lang="fr">thème</keyword>
+    <keyword xml:lang="fr">thèmes</keyword>
+    <keyword xml:lang="de">theme</keyword>
+    <keyword xml:lang="de">themes</keyword>
+    <keyword xml:lang="pt">arranque</keyword>
+    <keyword xml:lang="pt">tema</keyword>
+    <keyword xml:lang="pt">temas</keyword>
+    <keyword xml:lang="it">avvio</keyword>
+    <keyword xml:lang="it">tema</keyword>
+    <keyword xml:lang="it">temi</keyword>
+    <keyword xml:lang="ro">temă</keyword>
+    <keyword xml:lang="ro">teme</keyword>
+    <keyword xml:lang="ru">загрузка</keyword>
+    <keyword xml:lang="ru">тема</keyword>
+    <keyword xml:lang="ru">темы</keyword>
+  </keywords>
+
+  <launchable type="desktop-id">org.soplos.plymouthmanager.desktop</launchable>
+
+  <provides>
+    <binary>soplos-plymouth-manager</binary>
+  </provides>
+
+  <url type="homepage">https://soplos.org</url>
+
+  <developer id="org.soplos">
+    <name>Sergi Perich</name>
+  </developer>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/SoplosLinux/soplos-plymouth-manager-3.0/main/src-tauri/resources/screenshots/screenshot01.png</image>
+      <caption>The gallery of boot screen themes, with the one in use marked</caption>
+      <caption xml:lang="es">La galería de temas de arranque, con el tema en uso marcado</caption>
+      <caption xml:lang="fr">La galerie des thèmes de démarrage, avec le thème utilisé marqué</caption>
+      <caption xml:lang="de">Die Galerie der Startbildschirm-Themes, das verwendete Theme ist markiert</caption>
+      <caption xml:lang="pt">A galeria de temas de arranque, com o tema em uso marcado</caption>
+      <caption xml:lang="it">La galleria dei temi di avvio, con il tema in uso evidenziato</caption>
+      <caption xml:lang="ro">Galeria temelor de pornire, cu tema în uz marcată</caption>
+      <caption xml:lang="ru">Галерея тем загрузочного экрана с отмеченной используемой темой</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/SoplosLinux/soplos-plymouth-manager-3.0/main/src-tauri/resources/screenshots/screenshot02.png</image>
+      <caption>Removing several selected themes at once</caption>
+      <caption xml:lang="es">Quitar varios temas seleccionados a la vez</caption>
+      <caption xml:lang="fr">Suppression de plusieurs thèmes sélectionnés en une fois</caption>
+      <caption xml:lang="de">Mehrere ausgewählte Themes gleichzeitig entfernen</caption>
+      <caption xml:lang="pt">Remover vários temas selecionados de uma só vez</caption>
+      <caption xml:lang="it">Rimozione di più temi selezionati in una volta</caption>
+      <caption xml:lang="ro">Eliminarea mai multor teme selectate deodată</caption>
+      <caption xml:lang="ru">Удаление нескольких выбранных тем одновременно</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/SoplosLinux/soplos-plymouth-manager-3.0/main/src-tauri/resources/screenshots/screenshot03.png</image>
+      <caption>A theme shown by the preview before applying it</caption>
+      <caption xml:lang="es">Un tema mostrado por la previsualización antes de aplicarlo</caption>
+      <caption xml:lang="fr">Un thème affiché par la prévisualisation avant de l'appliquer</caption>
+      <caption xml:lang="de">Ein Theme in der Vorschau, bevor es angewendet wird</caption>
+      <caption xml:lang="pt">Um tema mostrado pela pré-visualização antes de o aplicar</caption>
+      <caption xml:lang="it">Un tema mostrato dall'anteprima prima di applicarlo</caption>
+      <caption xml:lang="ro">O temă afișată de previzualizare înainte de a fi aplicată</caption>
+      <caption xml:lang="ru">Тема в предпросмотре перед применением</caption>
+    </screenshot>
+  </screenshots>
+
+  <releases>
+    <release version="3.0.0-alpha" date="2026-10-24">
+      <description>
+        <p>First alpha of the rewrite of Soplos Plymouth Manager, from Python 3 and GTK3 to Tauri 2 with a Rust backend and a Svelte frontend. It applies, previews, installs and removes themes for real, with dracut or initramfs-tools, on X11 and Wayland. It has not yet been tested on real hardware.</p>
+      </description>
+    </release>
+  </releases>
+
+  <content_rating type="oars-1.1" />
+</component>

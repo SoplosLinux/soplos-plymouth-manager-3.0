@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Soplos's own light/dark theme, independent of the desktop environment's
+ * theme. Same token set as soplos-welcome-3.0, soplos-webapp-manager-3.0 and
+ * soplos-appimage-manager-3.0 so every ported app shares one visual
+ * identity. Defaults are the dark theme; :root.light overrides them.
+ * Toggled by lib/theme.ts.
+ */
+:root {
+  --color-dark: 37 37 39;
+  --color-panel: 30 30 32;
+  --color-surface: 44 44 46;
+  --color-surface-2: 53 53 56;
+  --color-border: 61 61 64;
+  --color-text: 192 192 192;
+  --color-text-bright: 255 255 255;
+  --color-text-muted: 136 136 136;
+}
+
+:root.light {
+  --color-dark: 245 245 245;
+  --color-panel: 255 255 255;
+  --color-surface: 255 255 255;
+  --color-surface-2: 232 232 232;
+  --color-border: 208 208 208;
+  --color-text: 71 85 105;
+  --color-text-bright: 44 62 80;
+  --color-text-muted: 107 114 128;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: theme("colors.dark");
+    color: theme("colors.text.DEFAULT");
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+}
+
+.content-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: theme("colors.primary.DEFAULT") transparent;
+}
+
+.content-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.content-scroll::-webkit-scrollbar-thumb {
+  background: theme("colors.primary.DEFAULT");
+  border-radius: 8px;
+}
+
+.content-scroll::-webkit-scrollbar-thumb:hover {
+  background: theme("colors.primary.hover");
+}
+
+/*
+ * Form controls. WebKitGTK draws a native select in white whatever the theme
+ * says, so selects and inputs are drawn here, with a chevron of their own.
+ */
+:root {
+  color-scheme: dark;
+}
+
+:root.light {
+  color-scheme: light;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 2rem;
+  background-repeat: no-repeat;
+  background-position: right 0.6rem center;
+  background-size: 0.95rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888888' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  cursor: pointer;
+}
+
+select:disabled {
+  cursor: not-allowed;
+}
+
+select option {
+  background-color: rgb(var(--color-surface));
+  color: rgb(var(--color-text-bright));
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 0.6;
+}
+
+/* Indeterminate bar at the bottom of the window while a job runs. */
+@keyframes progress-slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}
+
+.progress-slide {
+  animation: progress-slide 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}

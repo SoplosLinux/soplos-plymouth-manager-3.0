@@ -1,0 +1,84 @@
+.TH "SOPLOS-PLYMOUTH-MANAGER" "1" "2026-10-24" "Soplos Linux" "User Commands"
+.SH NAME
+soplos-plymouth-manager \- Plymouth boot splash theme manager for Soplos Linux
+.SH SYNOPSIS
+.B soplos-plymouth-manager
+.SH DESCRIPTION
+.B soplos-plymouth-manager
+chooses, previews, installs and removes the Plymouth boot splash themes of
+Soplos Linux from a graphical interface. Built with Tauri 2, Rust and Svelte,
+it works on Xfce, Plasma and GNOME, with X11 or Wayland, and it rebuilds the
+initramfs with
+.BR dracut (8)
+or with
+.BR update-initramfs (8),
+whichever the system uses; when both are installed, dracut is used.
+.P
+It has one window with a gallery of the installed themes, the one in use
+marked, and under it the buttons to apply a theme, preview it in a window,
+install one from an archive, remove and refresh the list. Several themes can
+be selected at once, with Ctrl or Shift click or the box in the corner of a
+card, and removed together. Text-only themes cannot be previewed, and the
+theme in use cannot be removed. The footer shows the desktop and the display
+protocol.
+.P
+Changes to the system are made through
+.BR pkexec (1),
+which asks for the password once for each action. A preview opens a nested X
+display and takes a picture of the theme, which is saved as
+.I preview.png
+in the folder of the theme and goes away with it.
+.P
+The interface is available in English, Spanish, German, French, Italian,
+Portuguese, Romanian and Russian. It starts in the system language and falls
+back to English.
+.SH OPTIONS
+The application has no command-line options.
+.SH KEYBOARD SHORTCUTS
+.TP
+.B F1
+About dialog.
+.TP
+.B Ctrl+Q
+Quit the application.
+.TP
+.B F5, Ctrl+R
+Refresh the list of themes.
+.TP
+.B Ctrl+A
+Apply the selected theme.
+.TP
+.B Ctrl+P
+Preview the selected theme.
+.TP
+.B Ctrl+I
+Install a theme from an archive.
+.TP
+.B Delete
+Remove the selected theme.
+.SH FILES
+.TP
+.I /usr/share/plymouth/themes/
+Installed Plymouth themes.
+.TP
+.I /etc/plymouth/plymouthd.conf
+Main Plymouth configuration file, where the theme in use is named.
+.TP
+.I /usr/share/polkit-1/actions/org.soplos.plymouthmanager.policy
+Polkit policy defining the administrator privileges for changes to the system.
+.SH AUTHOR
+Written by Sergi Perich <info@soploslinux.com> for the Soplos Linux project.
+.SH COPYRIGHT
+Copyright \(co 2026 Sergi Perich <info@soploslinux.com>.
+.br
+License: GPL-3.0-or-later <https://www.gnu.org/licenses/gpl-3.0.html>.
+.br
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+.SH SEE ALSO
+.BR plymouth (8),
+.BR plymouthd (8),
+.BR dracut (8),
+.BR update-initramfs (8),
+.BR soplos-grub-editor (1),
+.BR soplos-welcome (1)

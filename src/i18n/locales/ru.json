@@ -1,0 +1,85 @@
+{
+  "app": {
+    "title": "Менеджер Plymouth Soplos"
+  },
+  "hero": {
+    "title": "Темы экрана загрузки",
+    "description": "Выбирайте, просматривайте, устанавливайте и удаляйте темы Plymouth для Soplos Linux."
+  },
+  "common": {
+    "cancel": "Отмена",
+    "close": "Закрыть",
+    "ok": "OK",
+    "remove": "Удалить"
+  },
+  "sidebar": {
+    "language": "Язык",
+    "switchToLight": "Переключить на светлую тему",
+    "switchToDark": "Переключить на тёмную тему",
+    "aboutTooltip": "О Менеджере Plymouth Soplos"
+  },
+  "about": {
+    "version": "Версия {version}",
+    "tagline": "Менеджер тем экрана загрузки Plymouth для Soplos Linux.",
+    "copyright": "Copyright © 2026 Sergi Perich",
+    "license": "Лицензия GPL-3.0-or-later",
+    "website": "soplos.org"
+  },
+  "environment": {
+    "gnome": "GNOME",
+    "kde": "KDE Plasma",
+    "xfce": "XFCE",
+    "unknown": "Неизвестно",
+    "x11": "X11",
+    "wayland": "Wayland"
+  },
+  "themes": {
+    "emptyTitle": "Темы не найдены",
+    "emptyBody": "В обычных папках не найдено тем Plymouth. Установите пакет plymouth или тему, чтобы увидеть их здесь.",
+    "selected": "Выбрано: {count}",
+    "selectAll": "Выбрать все",
+    "clearSelection": "Снять выбор",
+    "cardSelect": "Выбрать {name}",
+    "apply": "Применить тему",
+    "preview": "Предпросмотр",
+    "install": "Установить",
+    "remove": "Удалить",
+    "removeSelected": "Удалить выбранные ({count})",
+    "refresh": "Обновить",
+    "inUse": "Используется",
+    "textOnly": "Только текст",
+    "textOnlyTitle": "Текстовая тема",
+    "textOnlyBody": "Эта тема выводит только текст, и её нельзя просмотреть в окне.",
+    "selectBundle": "Выберите файл темы",
+    "bundlesFilter": "Архивы тем",
+    "removeTitle": "Удалить тему",
+    "removeBody": "Удалить тему {name}? Это нельзя отменить.",
+    "removeManyBody": "Удалить выбранные темы ({count})? Это нельзя отменить.",
+    "removeSkipped": "Используемая тема пропускается: её нельзя удалить.",
+    "removeActive": "Используемую тему нельзя удалить. Сначала примените другую."
+  },
+  "steps": {
+    "setTheme": "Тема {arg} установлена по умолчанию.",
+    "initramfs": "Initramfs пересобран с помощью {arg}.",
+    "noInitramfs": "Инструмент initramfs не найден (dracut, update-initramfs или mkinitcpio). Тема выбрана, но появится при загрузке только после пересборки initramfs.",
+    "installed": "Тема {arg} установлена.",
+    "removing": "Тема {arg} удалена.",
+    "opening": "Открытие окна предпросмотра.",
+    "showing": "Показ темы {arg}.",
+    "noDisplay": "Нет графической сессии: для предпросмотра нужен X11 или Wayland.",
+    "missing": "Не хватает программы {arg}. Установите её, чтобы это сделать.",
+    "notPreviewable": "Эту тему нельзя просмотреть.",
+    "xephyrFailed": "Не удалось открыть тестовый экран (Xephyr).",
+    "captureFailed": "Не удалось получить снимок предпросмотра."
+  },
+  "errors": {
+    "title": "Не удалось завершить",
+    "apply": "Не удалось применить тему.",
+    "preview": "Не удалось выполнить предпросмотр темы.",
+    "install": "Не удалось установить тему.",
+    "remove": "Не удалось удалить все темы."
+  },
+  "notices": {
+    "title": "Уведомление"
+  }
+}

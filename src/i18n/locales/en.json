@@ -1,0 +1,85 @@
+{
+  "app": {
+    "title": "Soplos Plymouth Manager"
+  },
+  "hero": {
+    "title": "Boot screen themes",
+    "description": "Choose, preview, install and remove the Plymouth themes of Soplos Linux."
+  },
+  "common": {
+    "cancel": "Cancel",
+    "close": "Close",
+    "ok": "OK",
+    "remove": "Remove"
+  },
+  "sidebar": {
+    "language": "Language",
+    "switchToLight": "Switch to the light theme",
+    "switchToDark": "Switch to the dark theme",
+    "aboutTooltip": "About Soplos Plymouth Manager"
+  },
+  "about": {
+    "version": "Version {version}",
+    "tagline": "Plymouth boot splash theme manager for Soplos Linux.",
+    "copyright": "Copyright © 2026 Sergi Perich",
+    "license": "License GPL-3.0-or-later",
+    "website": "soplos.org"
+  },
+  "environment": {
+    "gnome": "GNOME",
+    "kde": "KDE Plasma",
+    "xfce": "XFCE",
+    "unknown": "Unknown",
+    "x11": "X11",
+    "wayland": "Wayland"
+  },
+  "themes": {
+    "emptyTitle": "No themes found",
+    "emptyBody": "No Plymouth themes were found in the usual folders. Install the plymouth package or a theme to see them here.",
+    "selected": "{count} selected",
+    "selectAll": "Select all",
+    "clearSelection": "Clear selection",
+    "cardSelect": "Select {name}",
+    "apply": "Apply Theme",
+    "preview": "Preview",
+    "install": "Install",
+    "remove": "Remove",
+    "removeSelected": "Remove selected ({count})",
+    "refresh": "Refresh",
+    "inUse": "In use",
+    "textOnly": "Text only",
+    "textOnlyTitle": "Text-only theme",
+    "textOnlyBody": "This theme only writes text and cannot be previewed in a window.",
+    "selectBundle": "Select a theme file",
+    "bundlesFilter": "Theme archives",
+    "removeTitle": "Remove theme",
+    "removeBody": "Delete the theme {name}? This cannot be undone.",
+    "removeManyBody": "Delete the {count} selected themes? This cannot be undone.",
+    "removeSkipped": "The theme in use is left out: it cannot be removed.",
+    "removeActive": "The theme in use cannot be removed. Apply another one first."
+  },
+  "steps": {
+    "setTheme": "Theme {arg} set as the default.",
+    "initramfs": "Initramfs rebuilt with {arg}.",
+    "noInitramfs": "No initramfs tool was found (dracut, update-initramfs or mkinitcpio). The theme is chosen, but it will not show at boot until you rebuild the initramfs.",
+    "installed": "Theme {arg} installed.",
+    "removing": "Theme {arg} deleted.",
+    "opening": "Opening the preview window.",
+    "showing": "Showing the theme {arg}.",
+    "noDisplay": "There is no graphical session: the preview needs X11 or Wayland.",
+    "missing": "The program {arg} is missing. Install it to be able to do this.",
+    "notPreviewable": "This theme cannot be previewed.",
+    "xephyrFailed": "The test screen (Xephyr) could not be opened.",
+    "captureFailed": "The picture of the preview could not be taken."
+  },
+  "errors": {
+    "title": "Could not be completed",
+    "apply": "The theme could not be applied.",
+    "preview": "The theme could not be previewed.",
+    "install": "The theme could not be installed.",
+    "remove": "Not all the themes could be removed."
+  },
+  "notices": {
+    "title": "Notice"
+  }
+}

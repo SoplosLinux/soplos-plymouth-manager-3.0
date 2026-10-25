@@ -1,0 +1,85 @@
+{
+  "app": {
+    "title": "Soplos Plymouth-Manager"
+  },
+  "hero": {
+    "title": "Themes des Startbildschirms",
+    "description": "Plymouth-Themes von Soplos Linux auswählen, in der Vorschau ansehen, installieren und entfernen."
+  },
+  "common": {
+    "cancel": "Abbrechen",
+    "close": "Schließen",
+    "ok": "OK",
+    "remove": "Entfernen"
+  },
+  "sidebar": {
+    "language": "Sprache",
+    "switchToLight": "Zum hellen Theme wechseln",
+    "switchToDark": "Zum dunklen Theme wechseln",
+    "aboutTooltip": "Über den Soplos Plymouth-Manager"
+  },
+  "about": {
+    "version": "Version {version}",
+    "tagline": "Manager für die Plymouth-Themes des Startbildschirms von Soplos Linux.",
+    "copyright": "Copyright © 2026 Sergi Perich",
+    "license": "Lizenz GPL-3.0-or-later",
+    "website": "soplos.org"
+  },
+  "environment": {
+    "gnome": "GNOME",
+    "kde": "KDE Plasma",
+    "xfce": "XFCE",
+    "unknown": "Unbekannt",
+    "x11": "X11",
+    "wayland": "Wayland"
+  },
+  "themes": {
+    "emptyTitle": "Keine Themes gefunden",
+    "emptyBody": "In den üblichen Ordnern wurden keine Plymouth-Themes gefunden. Installieren Sie das Paket plymouth oder ein Theme, um sie hier zu sehen.",
+    "selected": "{count} ausgewählt",
+    "selectAll": "Alle auswählen",
+    "clearSelection": "Auswahl aufheben",
+    "cardSelect": "{name} auswählen",
+    "apply": "Theme anwenden",
+    "preview": "Vorschau",
+    "install": "Installieren",
+    "remove": "Entfernen",
+    "removeSelected": "Auswahl entfernen ({count})",
+    "refresh": "Aktualisieren",
+    "inUse": "In Verwendung",
+    "textOnly": "Nur Text",
+    "textOnlyTitle": "Reines Text-Theme",
+    "textOnlyBody": "Dieses Theme schreibt nur Text und kann nicht in einem Fenster in der Vorschau angezeigt werden.",
+    "selectBundle": "Theme-Datei auswählen",
+    "bundlesFilter": "Theme-Archive",
+    "removeTitle": "Theme entfernen",
+    "removeBody": "Das Theme {name} löschen? Das lässt sich nicht rückgängig machen.",
+    "removeManyBody": "Die {count} ausgewählten Themes löschen? Das lässt sich nicht rückgängig machen.",
+    "removeSkipped": "Das verwendete Theme bleibt außen vor: Es kann nicht entfernt werden.",
+    "removeActive": "Das verwendete Theme kann nicht entfernt werden. Wenden Sie zuerst ein anderes an."
+  },
+  "steps": {
+    "setTheme": "Theme {arg} als Standard gesetzt.",
+    "initramfs": "Initramfs mit {arg} neu erzeugt.",
+    "noInitramfs": "Es wurde kein Initramfs-Werkzeug gefunden (dracut, update-initramfs oder mkinitcpio). Das Theme ist gewählt, erscheint aber erst beim Start, wenn Sie das Initramfs neu erzeugen.",
+    "installed": "Theme {arg} installiert.",
+    "removing": "Theme {arg} gelöscht.",
+    "opening": "Das Vorschaufenster wird geöffnet.",
+    "showing": "Das Theme {arg} wird angezeigt.",
+    "noDisplay": "Es gibt keine grafische Sitzung: Die Vorschau benötigt X11 oder Wayland.",
+    "missing": "Das Programm {arg} fehlt. Installieren Sie es, um dies tun zu können.",
+    "notPreviewable": "Dieses Theme kann nicht in der Vorschau angezeigt werden.",
+    "xephyrFailed": "Der Testbildschirm (Xephyr) konnte nicht geöffnet werden.",
+    "captureFailed": "Der Screenshot der Vorschau konnte nicht aufgenommen werden."
+  },
+  "errors": {
+    "title": "Nicht abgeschlossen",
+    "apply": "Das Theme konnte nicht angewendet werden.",
+    "preview": "Die Vorschau des Themes ist fehlgeschlagen.",
+    "install": "Das Theme konnte nicht installiert werden.",
+    "remove": "Nicht alle Themes konnten entfernt werden."
+  },
+  "notices": {
+    "title": "Hinweis"
+  }
+}

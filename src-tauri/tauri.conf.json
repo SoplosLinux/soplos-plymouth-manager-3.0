@@ -1,0 +1,73 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "soplos-plymouth-manager",
+  "version": "3.0.0-alpha",
+  "identifier": "org.soplos.plymouthmanager",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:1427",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Soplos Plymouth Manager",
+        "width": 900,
+        "height": 640,
+        "minWidth": 640,
+        "minHeight": 480,
+        "resizable": true,
+        "dragDropEnabled": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["deb"],
+    "publisher": "Sergi Perich",
+    "homepage": "https://soplos.org",
+    "copyright": "Copyright © 2026 Sergi Perich",
+    "license": "GPL-3.0-or-later",
+    "licenseFile": "../LICENSE",
+    "category": "Utility",
+    "shortDescription": "Plymouth boot splash theme manager for Soplos Linux",
+    "longDescription": "Choose, preview, install and remove the Plymouth boot splash themes of Soplos Linux, on Xfce, Plasma and GNOME, with X11 or Wayland, with dracut or initramfs-tools.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.png"
+    ],
+    "linux": {
+      "deb": {
+        "section": "admin",
+        "priority": "optional",
+        "depends": [
+          "pkexec",
+          "plymouth",
+          "plymouth-x11",
+          "dracut | initramfs-tools",
+          "xserver-xephyr",
+          "xterm",
+          "xdotool",
+          "x11-xserver-utils",
+          "scrot | imagemagick",
+          "tar",
+          "unzip"
+        ],
+        "changelog": "../CHANGELOG.md",
+        "desktopTemplate": "resources/debian/soplos-plymouth-manager.desktop.hbs",
+        "files": {
+          "/usr/share/metainfo/org.soplos.plymouthmanager.metainfo.xml": "resources/appstream/org.soplos.plymouthmanager.metainfo.xml",
+          "/usr/share/doc/soplos-plymouth-manager/copyright": "resources/debian/copyright",
+          "/usr/share/polkit-1/actions/org.soplos.plymouthmanager.policy": "resources/polkit/org.soplos.plymouthmanager.policy",
+          "/usr/share/man/man1/soplos-plymouth-manager.1.gz": "resources/docs/soplos-plymouth-manager.1.gz"
+        }
+      }
+    }
+  }
+}
