@@ -172,6 +172,11 @@
   </screenshots>
 
   <releases>
+    <release version="3.0.0-1-beta" date="2026-10-28">
+      <description>
+        <p>New application icon, new hero image and new screenshots, taken with the interface in English.</p>
+      </description>
+    </release>
     <release version="3.0.0-beta" date="2026-10-25">
       <description>
         <p>First beta of the rewrite of Soplos Plymouth Manager, after the alpha was tested on real hardware.</p>
