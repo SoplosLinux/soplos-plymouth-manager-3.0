@@ -3221,7 +3221,7 @@ dependencies = [
 
 [[package]]
 name = "soplos-plymouth-manager"
-version = "3.0.0-2-beta"
+version = "3.0.0-3-beta"
 dependencies = [
  "libc",
  "serde",

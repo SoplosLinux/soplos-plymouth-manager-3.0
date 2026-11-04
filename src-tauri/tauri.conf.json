@@ -1,7 +1,7 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "soplos-plymouth-manager",
-  "version": "3.0.0-2-beta",
+  "version": "3.0.0-3-beta",
   "identifier": "org.soplos.plymouthmanager",
   "build": {
     "beforeDevCommand": "npm run dev",
@@ -66,6 +66,9 @@
         "files": {
           "/usr/share/metainfo/org.soplos.plymouthmanager.metainfo.xml": "resources/appstream/org.soplos.plymouthmanager.metainfo.xml",
           "/usr/share/doc/soplos-plymouth-manager/copyright": "resources/debian/copyright",
+          "/usr/share/doc/soplos-plymouth-manager/screenshots/screenshot01.png": "resources/screenshots/screenshot01.png",
+          "/usr/share/doc/soplos-plymouth-manager/screenshots/screenshot02.png": "resources/screenshots/screenshot02.png",
+          "/usr/share/doc/soplos-plymouth-manager/screenshots/screenshot03.png": "resources/screenshots/screenshot03.png",
           "/usr/share/polkit-1/actions/org.soplos.plymouthmanager.policy": "resources/polkit/org.soplos.plymouthmanager.policy",
           "/usr/share/man/man1/soplos-plymouth-manager.1.gz": "resources/docs/soplos-plymouth-manager.1.gz"
         }

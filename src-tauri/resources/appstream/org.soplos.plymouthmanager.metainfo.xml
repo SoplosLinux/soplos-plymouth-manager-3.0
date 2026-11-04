@@ -123,7 +123,7 @@
     <keyword xml:lang="ru">темы</keyword>
   </keywords>
 
-  <launchable type="desktop-id">org.soplos.plymouthmanager.desktop</launchable>
+  <launchable type="desktop-id">soplos-plymouth-manager.desktop</launchable>
 
   <provides>
     <binary>soplos-plymouth-manager</binary>
@@ -172,6 +172,11 @@
   </screenshots>
 
   <releases>
+    <release version="3.0.0-3-beta" date="2026-11-04">
+      <description>
+        <p>The screenshots are installed with the package, the application metadata points to the installed launcher, and the manual page is the same in the project and in the package.</p>
+      </description>
+    </release>
     <release version="3.0.0-2-beta" date="2026-10-29">
       <description>
         <p>The window no longer has the frame of the system: it is a card with rounded corners and its own minimize, maximize and close buttons.</p>
