@@ -285,13 +285,19 @@ fn watchdog(pid: u32, finished: Arc<AtomicBool>, after: Duration) {
 
 /// The tool that rebuilds the initramfs, as the window shows it, with the
 /// program and its arguments: dracut is what Soplos uses, initramfs-tools is
-/// what Debian uses.
+/// what Debian uses. Both are run through `update-initramfs -u -k all` when it
+/// is there: on Soplos it is dracut's own wrapper, and unlike `dracut` alone
+/// it runs the hooks in /etc/initramfs/post-update.d, which copy the new
+/// initramfs to the EFI partition when the system boots with systemd-boot;
+/// without them the new theme would never be seen there. `dracut` itself is
+/// only the fallback when the wrapper is missing.
 fn initramfs_command() -> Option<(&'static str, PathBuf, Vec<&'static str>)> {
+    let label = if tool(&["dracut"]).is_some() { "dracut" } else { "initramfs-tools" };
+    if let Some(program) = tool(&["update-initramfs"]) {
+        return Some((label, program, vec!["-u", "-k", "all"]));
+    }
     if let Some(program) = tool(&["dracut"]) {
         return Some(("dracut", program, vec!["--regenerate-all", "--force"]));
-    }
-    if let Some(program) = tool(&["update-initramfs"]) {
-        return Some(("initramfs-tools", program, vec!["-u"]));
     }
     tool(&["mkinitcpio"]).map(|program| ("mkinitcpio", program, vec!["-P"]))
 }

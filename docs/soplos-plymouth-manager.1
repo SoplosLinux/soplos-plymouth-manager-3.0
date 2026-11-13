@@ -8,11 +8,13 @@ soplos-plymouth-manager \- Plymouth boot splash theme manager for Soplos Linux
 chooses, previews, installs and removes the Plymouth boot splash themes of
 Soplos Linux from a graphical interface. Built with Tauri 2, Rust and Svelte,
 it works on Xfce, Plasma and GNOME, with X11 or Wayland, and it rebuilds the
-initramfs with
-.BR dracut (8)
-or with
-.BR update-initramfs (8),
-whichever the system uses; when both are installed, dracut is used.
+initramfs of every kernel with
+.BR update-initramfs (8):
+on Soplos it is the wrapper of
+.BR dracut (8),
+which also copies the new initramfs to the EFI partition when the system
+boots with systemd-boot; on Debian it is initramfs-tools. dracut alone is
+used only when the wrapper is missing.
 .P
 It has one window with a gallery of the installed themes, the one in use
 marked, and under it the buttons to apply a theme, preview it in a window,

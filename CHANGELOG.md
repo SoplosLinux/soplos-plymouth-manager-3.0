@@ -2,6 +2,12 @@
 
 All notable changes to Soplos Plymouth Manager are documented in this file.
 
+## [3.0.0-4-beta] - 2026-11-14
+
+### Changed
+
+- Applying a theme rebuilds the initramfs of every kernel with `update-initramfs -u -k all` instead of `dracut --regenerate-all --force`. On Soplos it is dracut's own wrapper, and unlike `dracut` alone it runs the hooks of `/etc/initramfs/post-update.d`, which copy the new initramfs to the EFI partition when the system boots with systemd-boot, one of the three boot loaders Soplos Linux Installer offers; before, the new theme was never seen there. On Debian it is initramfs-tools, as before. `dracut` itself is used only when the wrapper is missing. The README and the manual page say so.
+
 ## [3.0.0-3-beta] - 2026-11-04
 
 ### Fixed

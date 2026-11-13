@@ -1,6 +1,6 @@
 # Soplos Plymouth Manager 3.0
 
-![Version](https://img.shields.io/badge/version-3.0.0--3--beta-blue)
+![Version](https://img.shields.io/badge/version-3.0.0--4--beta-blue)
 ![License](https://img.shields.io/badge/license-GPL--3.0--or--later-green)
 ![Platform](https://img.shields.io/badge/platform-Linux-lightgrey)
 ![Tauri](https://img.shields.io/badge/Tauri-2-orange)
@@ -39,7 +39,7 @@ sudo apt install soplos-plymouth-manager
 - **Themes**: a gallery of the installed themes with their image and name, the one in use marked. The description of a theme shows when the pointer rests on its card.
 - **Actions**: apply, preview, install from an archive (`.zip`, `.tar.gz`, `.tar.xz`, `.tar.bz2`), remove and refresh. The theme in use cannot be removed, and text-only themes cannot be previewed.
 - **Several at once**: Ctrl or Shift click, or the box in the corner of a card, select several themes, and Remove takes all of them away after one question. The theme in use is left out.
-- **dracut and initramfs-tools**: Soplos uses dracut and Debian uses initramfs-tools. Both are supported; when both are installed, dracut is used. mkinitcpio is detected too.
+- **dracut and initramfs-tools**: Soplos uses dracut and Debian uses initramfs-tools. Both are supported, and the initramfs of every kernel is rebuilt with `update-initramfs -u -k all`: on Soplos it is dracut's own wrapper, which also copies the new initramfs to the EFI partition when the system boots with systemd-boot. `dracut` alone is used only when the wrapper is missing. mkinitcpio is detected too.
 - **X11 and Wayland**: the session is detected and shown, with the desktop, in the footer.
 - **Progress**: a bar along the bottom edge of the window while a job runs. If something fails, a dialog says what.
 - **Light and dark**: the window follows the theme of the desktop, with a button in the footer to choose.

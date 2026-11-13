@@ -172,6 +172,11 @@
   </screenshots>
 
   <releases>
+    <release version="3.0.0-4-beta" date="2026-11-14">
+      <description>
+        <p>Applying a theme rebuilds the initramfs of every kernel with update-initramfs, which also copies it to the EFI partition when the system boots with systemd-boot, so the new theme is seen with the three boot loaders of Soplos Linux Installer.</p>
+      </description>
+    </release>
     <release version="3.0.0-3-beta" date="2026-11-04">
       <description>
         <p>The screenshots are installed with the package, the application metadata points to the installed launcher, and the manual page is the same in the project and in the package.</p>
